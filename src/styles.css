@@ -1,0 +1,88 @@
+@import "./poke-defaults.css";
+
+@import "tailwindcss";
+
+/* Shalom Inchoi portfolio — refined slate/indigo palette layered on the baked paper. */
+:root {
+  --accent: #4f5bd5;
+  --accent-ink: #ffffff;
+  --card: #ffffff;
+  --card-border: rgba(23, 23, 23, 0.09);
+  --card-shadow: 0 1px 2px rgba(23, 23, 23, 0.05), 0 8px 24px -12px rgba(23, 23, 23, 0.12);
+  --chip: rgba(23, 23, 23, 0.05);
+  --chip-border: rgba(23, 23, 23, 0.08);
+  --accent-soft: rgba(79, 91, 213, 0.1);
+}
+.dark {
+  --accent: #8b94ff;
+  --accent-ink: #0e0e11;
+  --card: #16161b;
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px -16px rgba(0, 0, 0, 0.7);
+  --chip: rgba(255, 255, 255, 0.06);
+  --chip-border: rgba(255, 255, 255, 0.1);
+  --accent-soft: rgba(139, 148, 255, 0.16);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --accent: #8b94ff;
+    --accent-ink: #0e0e11;
+    --card: #16161b;
+    --card-border: rgba(255, 255, 255, 0.08);
+    --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px -16px rgba(0, 0, 0, 0.7);
+    --chip: rgba(255, 255, 255, 0.06);
+    --chip-border: rgba(255, 255, 255, 0.1);
+    --accent-soft: rgba(139, 148, 255, 0.16);
+  }
+}
+
+@theme inline {
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-card: var(--card);
+  --color-card-border: var(--card-border);
+  --color-chip: var(--chip);
+  --color-chip-border: var(--chip-border);
+  --color-accent-soft: var(--accent-soft);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+[id] {
+  scroll-margin-top: 6rem;
+}
+
+
+/* Poke page anchor — keep LAST in this file so it wins over the token block above. */
+:root, .dark {
+  --background: var(--surface);
+  --foreground: var(--ink);
+}
