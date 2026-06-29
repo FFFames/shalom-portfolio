@@ -64,7 +64,7 @@ export type PortfolioContent = {
   footer: string;
 };
 
-const RESUME_EN = "/assets/resume/Resume - Full Stack AI Developer.pdf";
+const RESUME_EN = "https://storage.googleapis.com/interaction-media-bucket/2b6b3a46-4325-41d3-9beb-1adf9911a851/52151ae2-7752-59d3-9be1-f291eaa15878?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=vercel%40theta-eon-430220-u6.iam.gserviceaccount.com%2F20260629%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260629T060306Z&X-Goog-Expires=60&X-Goog-SignedHeaders=host&X-Goog-Signature=c1af5cfce50e80ac7496342da8710c34a31739bd8721c83eb0a9cae7288df5d022629da7dd0121f4b0c78644d4d564bfa125ebde318234a3bc230b1b45aa3c0965c090601077ef8bcc1ecf1b9416e337d28336cfed99ebced1b3422ec79616be2676e59660a2edf443c6fbfe1190c7d1b55ad986e538e4288c02767c78a3c808fe53938e96f47af5f3d30cff68c08ffbd150612926fda52c51a96c34ce93288b55cf517207473a7e87ac52ea583c9be465c9ead3c7e2378b06c29ad20418534ded2ac297a5cefbd59c5ba3cc1976a6913872e0c0e141655eb945e5f60fb8bd095ff74b1fa20b3e2b3194a4578001e51f0d1bef670f4684e4ddf3019191a6c9d7";
 const PROFILE_IMG = "/assets/images/profile.png?v=11";
 const EMAIL = "shalom.inchoi@gmail.com";
 
